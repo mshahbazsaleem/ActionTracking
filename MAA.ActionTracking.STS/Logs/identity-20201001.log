@@ -1,0 +1,64 @@
+2020-10-01 19:08:56.069 +05:00 [Information] Starting IdentityServer4 version "4.1.0+5a4433f83e8c6fca7d8979141fa5a92684ad56f6"
+2020-10-01 19:08:56.237 +05:00 [Information] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-10-01 19:08:56.257 +05:00 [Information] Using the default authentication scheme "Identity.Application" for IdentityServer
+2020-10-01 19:08:56.258 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+2020-10-01 19:08:56.258 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+2020-10-01 19:08:56.258 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+2020-10-01 19:08:56.259 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+2020-10-01 19:08:56.259 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+2020-10-01 19:09:00.202 +05:00 [Debug] Login Url: "/Account/Login"
+2020-10-01 19:09:00.202 +05:00 [Debug] Login Return Url Parameter: "ReturnUrl"
+2020-10-01 19:09:00.202 +05:00 [Debug] Logout Url: "/Account/Logout"
+2020-10-01 19:09:00.202 +05:00 [Debug] ConsentUrl Url: "/consent"
+2020-10-01 19:09:00.202 +05:00 [Debug] Consent Return Url Parameter: "returnUrl"
+2020-10-01 19:09:00.203 +05:00 [Debug] Error Url: "/home/error"
+2020-10-01 19:09:00.203 +05:00 [Debug] Error Id Parameter: "errorId"
+2020-10-01 19:22:49.242 +05:00 [Information] Starting IdentityServer4 version "4.1.0+5a4433f83e8c6fca7d8979141fa5a92684ad56f6"
+2020-10-01 19:22:49.335 +05:00 [Information] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-10-01 19:22:49.349 +05:00 [Information] Using the default authentication scheme "Identity.Application" for IdentityServer
+2020-10-01 19:22:49.349 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+2020-10-01 19:22:49.349 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+2020-10-01 19:22:49.349 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+2020-10-01 19:22:49.350 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+2020-10-01 19:22:49.350 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+2020-10-01 19:22:52.827 +05:00 [Debug] Login Url: "/Account/Login"
+2020-10-01 19:22:52.827 +05:00 [Debug] Login Return Url Parameter: "ReturnUrl"
+2020-10-01 19:22:52.827 +05:00 [Debug] Logout Url: "/Account/Logout"
+2020-10-01 19:22:52.827 +05:00 [Debug] ConsentUrl Url: "/consent"
+2020-10-01 19:22:52.828 +05:00 [Debug] Consent Return Url Parameter: "returnUrl"
+2020-10-01 19:22:52.828 +05:00 [Debug] Error Url: "/home/error"
+2020-10-01 19:22:52.828 +05:00 [Debug] Error Id Parameter: "errorId"
+2020-10-01 19:27:00.046 +05:00 [Information] Starting IdentityServer4 version "4.1.0+5a4433f83e8c6fca7d8979141fa5a92684ad56f6"
+2020-10-01 19:27:00.226 +05:00 [Information] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-10-01 19:27:00.246 +05:00 [Information] Using the default authentication scheme "Identity.Application" for IdentityServer
+2020-10-01 19:27:00.246 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+2020-10-01 19:27:00.246 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+2020-10-01 19:27:00.247 +05:00 [Debug] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+2020-10-01 19:27:00.247 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+2020-10-01 19:27:00.247 +05:00 [Debug] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+2020-10-01 19:27:04.542 +05:00 [Debug] Login Url: "/Account/Login"
+2020-10-01 19:27:04.542 +05:00 [Debug] Login Return Url Parameter: "ReturnUrl"
+2020-10-01 19:27:04.543 +05:00 [Debug] Logout Url: "/Account/Logout"
+2020-10-01 19:27:04.543 +05:00 [Debug] ConsentUrl Url: "/consent"
+2020-10-01 19:27:04.543 +05:00 [Debug] Consent Return Url Parameter: "returnUrl"
+2020-10-01 19:27:04.543 +05:00 [Debug] Error Url: "/home/error"
+2020-10-01 19:27:04.543 +05:00 [Debug] Error Id Parameter: "errorId"
+2020-10-01 19:29:21.176 +05:00 [Debug] Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+2020-10-01 19:29:21.251 +05:00 [Debug] Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+2020-10-01 19:29:21.253 +05:00 [Information] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+2020-10-01 19:29:21.256 +05:00 [Debug] Start discovery request
+2020-10-01 19:29:21.542 +05:00 [Debug] Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+2020-10-01 19:29:21.543 +05:00 [Debug] Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+2020-10-01 19:29:21.546 +05:00 [Information] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+2020-10-01 19:29:21.548 +05:00 [Debug] Start key discovery request
+2020-10-01 19:29:36.237 +05:00 [Debug] Request path "/connect/authorize" matched to endpoint type "Authorize"
+2020-10-01 19:29:36.241 +05:00 [Debug] Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+2020-10-01 19:29:36.243 +05:00 [Information] Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+2020-10-01 19:29:36.245 +05:00 [Debug] Start authorize request
+2020-10-01 19:29:36.249 +05:00 [Debug] No user present in authorize request
+2020-10-01 19:29:36.252 +05:00 [Debug] Start authorize request protocol validation
+2020-10-01 19:29:36.280 +05:00 [Error] Unknown client or not enabled: "ActionTracking"
+AuthorizeRequestValidationLog { ClientId: null, ClientName: null, RedirectUri: null, AllowedRedirectUris: null, SubjectId: "anonymous", ResponseType: null, ResponseMode: null, GrantType: null, RequestedScopes: "", State: null, UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "ActionTracking"), ("redirect_uri": "https://localhost:44394/signin-oidc"), ("response_type": "code id_token"), ("scope": "openid profile email offline_access dartican_api"), ("response_mode": "form_post"), ("nonce": "637371593616023492.OWQ1MzFjMzAtYzdhNi00MGEyLWFlMmQtZWQ5MGNhZTQ0YTVmYzhkYmYyZGItYWRmMS00NjQ3LWExY2UtMGU5ZDNkMjYxYTU2"), ("acr_values": "tenant:1"), ("state": "CfDJ8HphMy2yyM9KiWT9E6sjfKReA7_F69ArQfTVGYBZVlVzG106T5HU9c-SRiZGbyIZs1H5j7TzXiBVFQuItlp-21FRuo-3SGxhhJ3WI9fNptzE7Eqn_NL3ijs1LVQkGrGNdkZ5xGNW7YlX7EAz69O84TVmFe-mGUJx7c8X69JS1NdhznjveL_OmKtAJ6uhFCT95kN3YcECMcnZ5rGaeKqrUNDkPJCXKqj-DGp0rHd9x-iPPH6WBce68E-KOxBmxh1GBPZ0smWY181TJVMBaoBMQ70bp4Cr4GKA435V6yofUfSyb6kcir91v6Tf95aasYIJZw"), ("x-client-SKU": "ID_NETSTANDARD2_0"), ("x-client-ver": "5.6.0.0")] }
+2020-10-01 19:29:36.287 +05:00 [Error] Request validation failed
+2020-10-01 19:29:36.290 +05:00 [Information] AuthorizeRequestValidationLog { ClientId: null, ClientName: null, RedirectUri: null, AllowedRedirectUris: null, SubjectId: "anonymous", ResponseType: null, ResponseMode: null, GrantType: null, RequestedScopes: "", State: null, UiLocales: null, Nonce: null, AuthenticationContextReferenceClasses: null, DisplayMode: null, PromptMode: "", MaxAge: null, LoginHint: null, SessionId: null, Raw: [("client_id": "ActionTracking"), ("redirect_uri": "https://localhost:44394/signin-oidc"), ("response_type": "code id_token"), ("scope": "openid profile email offline_access dartican_api"), ("response_mode": "form_post"), ("nonce": "637371593616023492.OWQ1MzFjMzAtYzdhNi00MGEyLWFlMmQtZWQ5MGNhZTQ0YTVmYzhkYmYyZGItYWRmMS00NjQ3LWExY2UtMGU5ZDNkMjYxYTU2"), ("acr_values": "tenant:1"), ("state": "CfDJ8HphMy2yyM9KiWT9E6sjfKReA7_F69ArQfTVGYBZVlVzG106T5HU9c-SRiZGbyIZs1H5j7TzXiBVFQuItlp-21FRuo-3SGxhhJ3WI9fNptzE7Eqn_NL3ijs1LVQkGrGNdkZ5xGNW7YlX7EAz69O84TVmFe-mGUJx7c8X69JS1NdhznjveL_OmKtAJ6uhFCT95kN3YcECMcnZ5rGaeKqrUNDkPJCXKqj-DGp0rHd9x-iPPH6WBce68E-KOxBmxh1GBPZ0smWY181TJVMBaoBMQ70bp4Cr4GKA435V6yofUfSyb6kcir91v6Tf95aasYIJZw"), ("x-client-SKU": "ID_NETSTANDARD2_0"), ("x-client-ver": "5.6.0.0")] }
+2020-10-01 19:29:36.320 +05:00 [Information] TokenIssuedFailureEvent { ClientId: "ActionTracking", ClientName: null, RedirectUri: null, Endpoint: "Authorize", SubjectId: null, Scopes: "", GrantType: null, Error: "unauthorized_client", ErrorDescription: "Unknown client or client not enabled", Category: "Token", Name: "Token Issued Failure", EventType: Failure, Id: 2001, Message: null, ActivityId: "0HM362O82L81M:00000001", TimeStamp: 10/01/2020 14:29:36, ProcessId: 31620, LocalIpAddress: "::1:5000", RemoteIpAddress: "::1" }

@@ -1,0 +1,33 @@
+﻿@using MAA.ActionTracking.Web.Infrastructure.Services
+@inject TenantService _tenantService
+@{
+    ViewData["Title"] = "Tenants";
+  
+}
+
+<!--Tenants-->
+<div class="row">
+    <div class="col-md-12">
+
+        @await Html.PartialAsync("_List")
+       
+    </div>
+</div>
+
+<!--Manage Currency-->
+@await Html.PartialAsync("_Manage")
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        var viewModelJs = @Json.Serialize(await _tenantService.GetModel());
+
+        $.extend(viewModelJs, { controller: 'Tenant', idField: "Id", resetIgnore: [], mappingIgnore: [] });
+
+    </script>
+
+    <!--app scripts-->
+    <script src="~/js/administration/tenant/tenant-view-model.js"></script>
+    <script src="~/js/administration/tenant/tenants.js"></script>
+}

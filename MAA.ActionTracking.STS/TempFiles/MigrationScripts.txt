@@ -1,0 +1,3 @@
+﻿add-migration TenantFixture -context ActionTrackingDbContext -StartupProject MAA.ActionTracking.STS -outputdir Data\Migrations -verbose
+
+update-database -context actiontrackingdbcontext

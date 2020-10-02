@@ -1,0 +1,15 @@
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Data.deps.json
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Data.runtimeconfig.json
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Data.runtimeconfig.dev.json
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Data.dll
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Data.pdb
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Common.dll
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\bin\Debug\netcoreapp3.1\MAA.ActionTracking.Common.pdb
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.csprojAssemblyReference.cache
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.AssemblyInfoInputs.cache
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.AssemblyInfo.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.csproj.CoreCompileInputs.cache
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.csproj.CopyComplete
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.dll
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.pdb
+E:\Ali\DynamicForms\MAA.ActionTracking.Data\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Data.genruntimeconfig.cache

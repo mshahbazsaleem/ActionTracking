@@ -1,0 +1,41 @@
+﻿@using MAA.ActionTracking.Models
+<!--Modal header-->
+@await Html.PartialAsync("Common/Modal/_Header", new ModalViewModel { Size = "lg", Name = "tenant", Title = "Manage Tenant" })
+<!--Modal body-->
+<form class="horizontal-form">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <h3 class="section-header pt-0">Tenant</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row form-row align-items-center">
+        <div class="col-md-4 text-right">
+            <label for="tenant-name" class="required">Name</label>
+        </div>
+        <div class="col-md-5">
+            <input type="text" class="form-control" data-bind="value: Name" required data-required-message="Tenant name is required">
+        </div>
+    </div>
+    <div class="form-group row form-row align-items-center">
+        <div class="col-md-4 text-right">
+            <label for="tenant-identifier" class="required">Identifier</label>
+        </div>
+        <div class="col-md-5">
+            <input type="text" class="form-control" data-bind1="value: Identifier" required data-required-message="Tenant Identifier is required">
+        </div>
+    </div>
+    <div class="form-group row form-row align-items-center">
+        <div class="col-md-4 text-right">
+            <label for="application-title" class="required">Application Title</label>
+        </div>
+        <div class="col-md-5">
+            <input type="text" class="form-control" data-bind="value: ApplicationTitle" required data-required-message="Application is required">
+        </div>
+    </div>
+
+</form>
+<!--Modal footer-->
+@await Html.PartialAsync("Common/Modal/_Footer",  new FooterViewModel { ShowSaveAndNew = true })

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MAA.ActionTracking.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <environment include="Development,Production">
+        <link href="~/css/font-awesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="~/css/font-awesome/css/all.css" rel="stylesheet" />
+        <link href="~/lib/toastr/toastr.css" rel="stylesheet" />
+        <link href="~/lib/datatables/datatables.css" rel="stylesheet" />
+        <link href="~/lib/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
+        <link href="~/lib/select2/css/select2.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" />
+        <link href="~/css/flag-icon-css/css/flag-icon.css" rel="stylesheet" />
+        <link href="~/lib/tooltipster/css/themes/tooltipster.bundle.css" rel="stylesheet" />
+        <link href="~/lib/tooltipster/css/themes/tooltipster-sideTip-borderless.min.css" rel="stylesheet" />
+        <link href="~/lib/x-editable/bootstrap4-editable/css/bootstrap-editable.css" rel="stylesheet" />
+
+       
+        <link rel="stylesheet"
+              type="text/css"
+              media="screen"
+              href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.css" />
+
+    </environment>
+
+    <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
+    <!--favicon-->
+    <link href="~/images/favicon.png" rel="" />
+
+    @if (IsSectionDefined("LocalStyles"))
+    {
+        @RenderSection("LocalStyles")
+    }
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MAA.ActionTracking.Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--Full screen loader-->
+    @await Html.PartialAsync("_FullScreenLoader")
+    <!--Full screen loader-->
+    <!--Delete confirmation-->
+    @await Html.PartialAsync("_DeleteConfirmation")
+    <!--Delete confirmation-->
+    <!--Logout confirmation modal-->
+    @await Html.PartialAsync("_Confirmation", new ConfirmationViewModel { ActionButtonClass = "btn-danger", Id = "confirm-logout", Title = "Log Out", Text = "Do you really want to log out?", ConfirmButtonText = "Yes", CancelButtonText = "No", CancelIcon = "close", ConfirmIcon = "check" })
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - MAA.ActionTracking.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jqueryui/jquery-ui.js"></script>>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/lib/slimscrollbar/jquery.slimscroll.js"></script>
+        <script src="~/lib/knockout/knockout-debug.js"></script>
+        <script src="~/lib/knockout/knockout.mapping.js"></script>
+        <script src="~/lib/knockout-validation/knockout.validation.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>
+        <script src="~/lib/underscore/underscore.js"></script>
+        <script src="~/lib/underscore.string/underscore.string.js"></script>
+        <script src="~/lib/datatables/datatables.js"></script>
+        <script src="~/lib/moment/moment.js"></script>
+        <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="~/lib/color-js/color.js"></script>
+        <script src="~/lib/select2/js/select2.js"></script>
+        <script src="~/lib/jquery-nice-select/js/jquery.nice-select.js"></script>
+        <script src="~/lib/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+        <script src="~/lib/x-editable/bootstrap4-editable/js/bootstrap-editable.js"></script>
+        <script src="~/lib/draggabilly/draggabilly.pkgd.js"></script>
+        <script src="~/lib/colresizable/colResizable-1.6.js"></script>
+        <script src="~/lib/html2canvas/html2canvas.min.js"></script>
+
+        <!--App scripts-->
+        <script src="~/js/common/knockout-extensions.js"></script>
+        <script type="text/javascript" src="~/js/common/globals.js"></script>
+        <script src="~/js/common/api-endpoints.js"></script>
+        <script src="~/js/common/helpers.js"></script>
+        <script src="~/js/common/plugins.js"></script>
+        <script src="~/js/common/web-api-client.js"></script>
+        <script src="~/js/common/grid-base.js"></script>
+        <script src="~/js/common/base-view-model.js"></script>
+        <script src="~/js/common/font-selector-view-model.js"></script>
+    </environment>
+    <environment include="Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/lib/slimscrollbar/jquery.slimscroll.js"></script>
+        <script src="~/lib/knockout/knockout-debug.js"></script>
+        <script src="~/lib/knockout/knockout.mapping.js"></script>
+        <script src="~/lib/knockout-validation/knockout.validation.js"></script>
+        <script src="~/lib/toastr/toastr.min.js"></script>
+        <script src="~/lib/underscore/underscore.js"></script>
+        <script src="~/lib/underscore.string/underscore.string.js"></script>
+        <script src="~/lib/datatables/datatables.js"></script>
+        <script src="~/lib/datatables/jquery-datatables-checkboxes-1.2.11/js/dataTables.checkboxes.js"></script>
+        <script src="~/lib/moment/moment.js"></script>
+        <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="~/lib/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+        <script src="~/lib/color-js/color.js"></script>
+        <script src="~/lib/select2/js/select2.js"></script>
+        <script src="~/lib/jquery-nice-select/js/jquery.nice-select.js"></script>
+        <script src="~/lib/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+        <script src="~/lib/tooltipster/tooltipster.bundle.min.js"></script>
+        <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+        <script src="~/lib/x-editable/bootstrap4-editable/js/bootstrap-editable.js"></script>
+        <script src="~/lib/draggabilly/draggabilly.pkgd.js"></script>
+        <script src="~/lib/colresizable/colResizable-1.6.min.js"></script>
+        <!--App scripts-->
+        <script src="~/js/common/knockout-extensions.js"></script>
+        <script type="text/javascript" src="~/js/common/globals.js"></script>
+        <script src="~/js/common/api-endpoints.js"></script>
+        <script src="~/js/common/helpers.js"></script>
+        <script src="~/js/common/plugins.js"></script>
+        <script src="~/js/common/web-api-client.js"></script>
+        <script src="~/js/common/grid-base.js"></script>
+        <script src="~/js/common/base-view-model.js"></script>
+        <script src="~/js/common/font-selector-view-model.js"></script>
+
+    </environment>
+
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="dist/form-builder.min.js"></script>
+    <script src="dist/form-render.min.js"></script>
+    <script src="demo/assets/js/demo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

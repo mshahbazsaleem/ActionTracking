@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MAA.ActionTracking.Common/1.0.0": {
+        "runtime": {
+          "MAA.ActionTracking.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MAA.ActionTracking.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

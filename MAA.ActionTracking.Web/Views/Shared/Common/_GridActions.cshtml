@@ -1,0 +1,19 @@
+﻿@model GridActionModel
+
+    <div class="table-filters-bar action-header" id="grid-actions-@Model.Name">
+        <h2 class="mr-3 color-iron">@Model.Title</h2>
+        <div class="actions">
+            <a href="javascript:(0)" class="btn btn-light btn-sm col mr-1 column-options" title="Configure column order, sort and visibility" data-toggle="tooltip"><i class="mr-1 fas fa-wrench color-primary"></i>Columns"]</a>
+            <a href="javascript:(0)" class="btn btn-light btn-sm col mr-1 current-hidden-columns" data-title="Hidden Columns" data-toggle="popover"><i class="mr-1 mdi mdi-eye-off color-primary"></i></a>
+            <a href="javascript:(0)" class="btn btn-light btn-sm col mr-1 current-sort-columns" data-title="Current Sort Columns" data-toggle="popover"><i class="mr-1 mdi mdi-sort color-primary"></i></a>
+            <a href="javascript:(0)" class="btn btn-light btn-sm col mr-1 current-filter-columns" data-title="Applied Filters" data-toggle="popover"><i class="mr-1 mdi mdi-filter color-primary"></i></a>
+            <div class="custom-control custom-switch toggle-personalization ml-3 pt-2">
+                <input type="checkbox" class="custom-control-input" checked="checked" id="toggle-personalization" data-text-standard="Show Standard Settings" data-text-personalized="Show Personalized Settings">
+                <label class="custom-control-label" for="toggle-personalization">Show Standard Settings"]</label>
+            </div>
+        </div>
+        <div class="actions search-wrapper">
+            <i class="mr-1 fas fa-filter"></i> <input type="text" autocomplete="off" role="search" placeholder="Dynamic placeholder here" />
+            <i class="mr-1 mdi mdi-close fa-2x"></i>
+        </div>
+    </div>

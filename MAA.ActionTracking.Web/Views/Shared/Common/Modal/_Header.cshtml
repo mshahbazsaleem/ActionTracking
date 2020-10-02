@@ -1,0 +1,11 @@
+﻿@model ModalViewModel
+<div class="modal fade" id="modal-@Model.Name" role="dialog" data-close-on-success data-async aria-labelledby="@Model.Name-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-@(string.IsNullOrEmpty(Model.Size)?"xl":Model.Size) modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="@Model.Name-model-label">@Model.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div @(Model.Binding) class="modal-body @(string.IsNullOrEmpty(Model.AdditionalClasses)? "":Model.AdditionalClasses)">

@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Data\\MAA.ActionTracking.Data.csproj": {}
+  },
+  "projects": {
+    "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\MAA.ActionTracking.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\MAA.ActionTracking.Common.csproj",
+        "projectName": "MAA.ActionTracking.Common",
+        "projectPath": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\MAA.ActionTracking.Common.csproj",
+        "packagesPath": "C:\\Users\\Shahbaz\\.nuget\\packages\\",
+        "outputPath": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Shahbaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Dartican\\Resources And Controls": {},
+          "D:\\Dartican\\Stuff\\SAMLv20-licensed\\SAML for .NET\\Bin": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Data\\MAA.ActionTracking.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Data\\MAA.ActionTracking.Data.csproj",
+        "projectName": "MAA.ActionTracking.Data",
+        "projectPath": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Data\\MAA.ActionTracking.Data.csproj",
+        "packagesPath": "C:\\Users\\Shahbaz\\.nuget\\packages\\",
+        "outputPath": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Shahbaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Dartican\\Resources And Controls": {},
+          "D:\\Dartican\\Stuff\\SAMLv20-licensed\\SAML for .NET\\Bin": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\MAA.ActionTracking.Common.csproj": {
+                "projectPath": "E:\\Ali\\DynamicForms\\MAA.ActionTracking.Common\\MAA.ActionTracking.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Finbuckle.MultiTenant.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

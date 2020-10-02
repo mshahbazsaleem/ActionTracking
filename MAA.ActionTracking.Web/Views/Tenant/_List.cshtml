@@ -1,0 +1,40 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <div id="grid-tenant-wrapper" class="card card-default">
+            <div class="card-header hidden">
+                <div class="custom-table-header">
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="table-filters-bar action-header i-r-0">
+                    <div class="actions search-wrapper align-items-center">
+                        <h2 class="mr-3 color-iron">Tenants</h2>
+                    </div>
+                    <div class="actions section-header-actions">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-body pt-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--nowrap makes sure that content is not wrapped by the browser-->
+                        <table id="grid-tenant" data-grid="master" data-has-column-visibility="false" data-text-search-column="Name" data-has-search="true" data-has-print="true" data-has-actions="true" data-has-edit="true" data-edit-text="Edit" data-has-add="true" data-add-text="Add" data-has-delete="true" data-delete-text="Delete" class="table table-hover dt-table nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th data-column="Name">Name</th>
+                                    <th data-column="ApplicationTitle">Title</th>
+                                    <th data-column="TenantId">Id</th>
+                                    <th data-column="Id" data-column-action="true" data-sortable="false">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

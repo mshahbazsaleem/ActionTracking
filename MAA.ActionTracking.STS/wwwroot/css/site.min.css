@@ -1,0 +1,61 @@
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4
+}
+
+.btn-bracketed::before {
+    display: inline-block;
+    content: "[";
+    padding-right: .5em
+}
+
+.btn-bracketed::after {
+    display: inline-block;
+    content: "]";
+    padding-left: .5em
+}
+
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%
+}
+
+@media screen and (max-width:767px) {
+    .carousel-caption {
+        display: none
+    }
+}
+
+body, html {
+    height: 100%
+}
+
+.flex-grow {
+    flex: 1 0 auto
+}
+
+.wrapper, body {
+    min-height: 100vh
+}
+
+.form-wrapper {
+    width: 440px
+}
+
+    .form-wrapper button[type=submit] {
+        width: 100%
+    }
+
+footer p {
+    line-height: 50px
+}
+
+footer img {
+    width: 160px;
+    height: 46px;
+    margin-top: -6px
+}

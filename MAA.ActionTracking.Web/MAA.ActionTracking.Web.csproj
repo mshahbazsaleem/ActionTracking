@@ -1,0 +1,336 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\formBuilder\**" />
+    <Content Remove="wwwroot\lib\formBuilder\**" />
+    <EmbeddedResource Remove="wwwroot\lib\formBuilder\**" />
+    <None Remove="wwwroot\lib\formBuilder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\colresizable\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\lib\colresizable\.git\config" />
+    <None Include="wwwroot\lib\colresizable\.git\FETCH_HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\index" />
+    <None Include="wwwroot\lib\colresizable\.git\logs\HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\lib\colresizable\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\logs\refs\remotes\origin\master" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\00\aec75a2af8e84dc9b208bea7339ae37095e376" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\00\d9b33b4ecbb75c557d8caa9f6b625d6583de75" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\00\f05a205a6b7e8f3f1f97b493c2d0579945bd9c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\02\0f5de3e12f179c01d10e4369990172b90715f4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\02\24860728d8aac9faf3b5fa2bb0db5529b90e79" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\02\6da6d132be55d6083b3f896054a5728124e59f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\02\b6a2b68458a6370f1adedce36aa49ae63c7567" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\03\e21750e6891020f70604f60bdc7a8477ab5fd8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\03\f2ed592d16a20d1041b99a5dcd658308a371a7" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\04\d622c3f3df5a864cedf0af7e1793a8dca02114" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\05\7b0f25e24c49872dd7a65196d574f71b2bc6c0" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\06\3f71ab915a29c15f9d977c8f6ce8e90af09b51" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\07\fafc72682cfe6f51469a04283734325bac92ac" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\08\ec064a31be488fed94c2fa45e894250d12eb23" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\09\a46d353e7bfe8a7fe2c2e8fa51376ae27cee27" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\0a\ab594bafeaa053a01b3727ec383c834a95274b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\0c\4ced23f7e5e9e3b6bb69a8350e576fd5d7c7d5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\0f\bc068669a398964b086d8d54e9a0e3ff08cb5f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\0f\bdc79abfb48fc23c6839db6a5bf709abc785a5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\10\57fc8c33ec41374a818b2d11b9b26c67a99bc1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\12\43f755c41047d9110b5e44602444aff8521d2e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\13\4eab49801a67cbd1f7983b8e6e4a6fc1baa0bc" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\14\b83ef0ec6760475df158330e435b5afc5d81ce" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\15\3944e492d946beeda37271f8d90143a1102703" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\15\f0de3ea4b8092a677dac0be85763722e7c5110" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\16\0bc3342fef91301a7382b68e0ca257573edebe" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\16\f73f68cf683db6a671fb5d02718664e35cdeb4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\17\d414bdb5076b622ab7077d8494d2e19bc9f0fa" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\18\228ee8c1c47e0283793d2c5cb1ea9819d48e40" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\1f\633a4c3c5658fd3cf15faf5751d66ea130b81b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\21\1b32c06137e45cdce7da2bb50bcba11cec8666" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\21\830a583f76979f3eace6aea6968849773d519b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\23\9146026c59712df41d4810ac42b44969c94344" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\24\6031bc554d3d86ef587708d551d8d9a84f4bbd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\28\4f089f7084081205b6c657a3d3191e20c434a2" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\28\7e67a1b5b5593c1107ec3f638bd3ab3b81f534" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\28\908590259b1d6447a6f0deaaf5d99b61d51847" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2a\1ab8b66a4b0bfe7611512c6538e9608be968a0" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2b\afd957a611621fcb2b500f9867e48f07ca39db" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2d\bea01904bb8c68eee1ac78ec45b3c6506a2619" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2e\00891f357f3060c6c13aa51e085d27020327aa" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2e\b5a92fbe1b9807bb67cfa3347449d9c325fd4f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2f\4648fe845158cd7c89ba4855ddacbcc239daa9" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\2f\6d332a18b182c58d878c632134dbc4354b5332" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\31\b2a3fb25eb69374260f07eab198bce2d8c5420" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\32\2b74ecc2067b406aeb3bdf7ff41cbe017855db" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\32\cd6465bdd3b2c83648fe0e529ac23d0dad88a4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\33\9c00976cf80471cbbff1a85cabfb74245a9625" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\34\42de5a493b54dcaec691893774974f64748c57" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\34\87db8592b979c86a0dcd9586554a3626fd869a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\36\375903fbc383e3947f3ab68eed7983717cf7c1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3a\3a1d41d73782242c4a2029541606aaa1f49915" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3a\70cecd726ecb2ccef9529ee9fcbc175ed66edd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3a\ab8530ed139b8f2bf6cb856ae52de47f94b9bb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3c\d1176559b214090d85e1af294494fee23f51e9" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3c\d3b699d93973f5f493e8dc867260699f4f29ce" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3c\e9e23dfc68d0162801b7224b00d65518d366ac" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3c\ec6188a70711a568a09b96ab61d826b95b2e0d" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3d\9431dafc344534da4c346a8662478decc933ed" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3d\e3d8bf76d7e5bbc6e717c5c4f38a873057e614" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\3e\4a7c97d3f3b28057949e372fb25c4f90a866f1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\41\1bcfce48527e5ce9034f88bb2ca27d5964b645" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\41\692fe9f2454b6463e30a5da42f24e89100b750" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\42\9cc8e8d9880c28c093343d40486d02b1e6180a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\42\f309af10d2547ae48399f8f507cfc843db53ef" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\43\6c67d09a83a668f157150a42a8089be05d855e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\44\d6e6ecdcb6b4a17b6c9ce33c55a6d459f256be" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\46\4628ee68590bd9ced50dee80ed32b6c42e00b6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\46\9eacf2252b598210985fbd2b7f595e5121450a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4a\9313e57d5fca32b9eff77869416a3d9ee20547" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4a\abb613ac8b2221f7c095c3c711052523d5a09a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4c\d41266f129dd6621c2cdf638538eb707d139de" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4c\e939aa83c5ba54b9b986087a486ab6912fc24b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4d\c200053a18710d67a89a1d10420df0779e6ece" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4f\0f18a101b5f49394cb609dfc79390450d7a51b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\4f\d542f50072f20ff9b558e1aac76e6e9d09b937" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\51\278faf114df7b6c38a28217359e353c0c0d6bd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\51\93f821bde27737790fbfe0a0affb0321094656" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\51\e6ead74db1e05e3e2a5f779634babfa6de9b61" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\52\3dd8f7b83fb8d5e733ea17fd5f1f283f072546" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\52\d5eeb78f053dc2695c6a229a962c36808665a5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\57\c6fa3e006e43a809d98edc02b943f9715bc9cb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\58\eeaf863e53d4483417750d4aa2d8c216ff08ce" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\59\671833874eadd6a72d9958e8857c266422cb2d" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\59\a9e1ff7f7896bf8f28a45f674f619c33e04b17" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\59\bf4b9e84a6df65110bfa31ce5b3a841b5669eb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\59\e6bee2d1a5f14c3dd06f5f88fd428ec5af3453" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\59\e7b4170b7ed35310bbf74a81bc564c688d21bb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\5a\3411fe5f0b2a9db2ecbc7287ac392c3f377758" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\5c\90929814a17a320ff4ae568024a373b7d1f59f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\5d\61ec4e1c4519b4911a32968bdba16581533a73" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\5e\09f451f6bb9faf60637789869fa8074fc22999" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\5e\19033463c8375ef4d3a73e48064851cd49ab65" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\61\26ba4c02106f242fb0062d9248785fa8f2991c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\61\3b6b5124a2bd854d2f4c79b2cd1e152dd4a229" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\63\428dadf4704a2e5b93ef04cddd0e5d496271c7" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\63\91d2fe9400f9b0a4010690b5d80c1e9afe6a06" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\64\e3eac9adb349bc240badd58717b1ce4c539fa6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\65\c57a29a1506c3b71ff09796203d1dce486b813" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\65\df91cc456355831d9b7169a126df74998b0c57" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\65\f75680a478e1d81c5dafcdd27ebda300f44ae4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\66\006180958da5ad9baa48db30d53efb2b0aae24" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\67\c60357af032dfd422eca965d47b0ec82af0d87" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6c\b0d3a1bbe1126e023c35bd4d766d6761cfddd4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6d\6077cf0f354405f3f3b00f6d924b5fdace47bd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6e\574d406ba9d8d146cf2debea0bae652e187191" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6e\a0abfaf32917487c5134dc8e7205c9cd1b6bcb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6f\559f44b4b5dd215d0448cca3fccc27f3aba15b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6f\8122b489e7f8e0e7b9994d64768011046a99a0" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\6f\a6304c33ba41be01d0e25b236cffe5c7a9e823" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\70\470cb08dac98563db4a5455c89b03ad74e7748" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\71\9d3c7834bad236673d813e353b0e8c1e2572a3" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\71\dca2f2a28f7d98d7d539a12d0881f1e392149b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\72\cbc717ffad655a8b346d6203892d0b0262fa23" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\72\cc4437988ca8065ac2311d50f72b28b6786398" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\72\dc53f55a12ed8af3a8e1da4165c248098bf6f4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\73\c91ba967f07959ffcad25c452da3e17f1f66bc" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\76\ca2d4152579a581bee73340f393c8ddfd94d7c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\77\77a3a3a1a95eea15bcb0ea27957dda4f233a18" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\77\94afa49f88861d9f9c151b0a962892ac5e3045" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\7a\2843bd7ebaedf7ff9949576f3563fb860f5777" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\7d\16dde3df7f01974a8310072bfbbf00bbbbca95" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\7e\218cfa4373b5ac4a2f7553c7fabf54d3fb145d" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\7f\36c53b8085af95c62e6ca5e5661a0e11284e33" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\81\394586c03675132b524ec48d46dea7eaf6125c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\83\96f9ea36fb38994b703cdee2727c2ffa049e2b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\84\df632569e3e95000286781cb7cd4ab1926a332" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\86\c9676f2395b4ad635010c1291db6147fd3a1b0" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\87\967381c844c00d6da796cbb6a06de956536d8e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\87\bd4d9bdf4c55ab933569fd3f058a3028ede00b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\87\be439e342e4c5f082f9eb43b8966d1fe15fdd1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\88\731a31f9c5f853e6d23861073d10e0696a5ac5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\88\9933343788eb582fee500254d69d2bcabc7ad4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\89\bdc6022153d6edb2cf23ba5ae2fec107cef24b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\8c\37bfcce7db95d92eb10e8047b45d1fc93424ed" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\8d\24488dd7aa2fad48b508e8c592a6d3c17975ed" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\90\095e733916e5e86d1e76738234ba00e118645c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\92\ee31a3dc22b3fb06a20cc81afb5395b4eca4cc" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\96\f1c38c3953011c8cbdc1fe405a1fc4925407fe" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\97\51e7b6c57a0f8a5aec61af5535916627116272" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\97\60e303bc1858bcde28ef23a129946cf379026a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\98\7ef6b8722681f3b0b3a1fa7a7f870d7bb16454" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\98\f49d90f8a688a34aaffac7d44f50c899421505" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\9a\6a4a9626eabba82fa6dafecee2f498ba8de92f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\9c\7b6bdefd4e7a1cf035d4078ab0d4db924c457e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\9d\4b2de04e01471fca59685f52d93a4e96795072" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\9d\efd16ced82a57e83ff3bcdfd4760f7946ff5f6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a0\92139a76a4e1dd7ffc22aa3cd1b32804d23ae6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a3\f9bdb3607f428b7a342d977803c95c8b1e67fa" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a4\8105ca8f0ea83be1f52d6dd130b6173df9b76f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a5\40027c4721e495e1fec5ae90d0a0336a30c4ed" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a6\1cdc1bf9582b956b708db9c1c80c55597820ae" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a7\4ba37c37170880c4217d9b657e66ba85753d3d" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a7\52e49ff3a1fd201f0be725db5ea15319b066bc" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\a8\896721529f4565d2bc2df7567fb31d94d03e22" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ac\eef9063f745e976d806c8255ed8bfb0ac002b8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ad\0b6ac96f63bcd41614bde57728184a0cd34093" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ad\81b2180028f401b465be78115338c65e3c04a1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ad\94672d3bc617fe29622063c10898882e5bd587" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ad\ed43306e0a371e7312af091e3ae4784964808c" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ae\5d5c781564c7672ff72269c4c0c4da2ab2659b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b1\52632023d2f1ca758fd1cb8956521a23d74da5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b1\aab1454f1cd82032152a2d263d9553793d43be" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b2\672d50be6a45062cef68dd2d1d697be2977b9a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b3\5109f36d90fc00ac8bda2fc68d8d56730cfb0a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b5\dfc3b52369ac6c3906bf2e77eeb8aaab3c61e2" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b6\0ee0fcdc85d962e6a85c7ff2dfa0e78f1f6860" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b6\555d732b97b27203822b386139543cbe6d7877" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b8\284c196f51a6b962afbb014f3ef405977f9668" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\b9\96956fea21a2511119d1b272beb73861223af8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ba\49371965a6cf8c4c609560104d28ef7e91a781" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\bd\8dd2271185ecab1006a9f29c6a6897dfd5d9c1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\bd\b2c5f6d6098c67b3e1d5cfdf4e9b446ec1b7db" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\be\4859b1ed220d2c43df453ededa860055915ea3" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\be\b6a2f57a48f53fa31438e76fc5a78634dcf705" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\bf\5ae9d79cb30979bc32a4f4c5722aedcf1d7ba6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c1\bdcc605877315300c0d58d8a22f9b02ca76fd8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c1\f82fdd455113b7bb439613fb507e1a0e4a0492" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c2\117d7d963ad8412807f8e4eb5c92c31fe6e4ed" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c2\35801df8364df45da7b44a21b66e6f0912486f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c4\df4b638faaa6b770d4da3965a48f9fc1ced9e8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c7\d0de3eaab28141570d4f95e6a251aaff752e84" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\c9\80eb5b3d4aa58e806014fd7754df41b1eef77d" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ca\44c69a63ead356dc7b089f67209087e9991c70" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\cc\35771d91fac619e833820ef583eb8169a791d9" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\cd\6bdaad05d0684c00cf48d445c9f0a832905328" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ce\bb2afec1d80c1e32b91aab5101bd42e4aa3ca6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\cf\4c90ce7c24be426a77353ac360352ea3a5ee29" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d1\ae667a2b2a99a5b3261ac0ab37e2d93b4de6cf" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d2\218b29a13932e4611c4a8938c23ff8de9751be" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d2\97a714431195c1d3175b2e19230c955a2af8bb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d4\46ebf877c23dd1bc8652fa723f0560204e33b4" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d4\58d7a3b7812464c8797f3180adb5fb5a18bd38" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d8\06283e6bb1f058a10d5b34a961f929a72cf817" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d8\633453483ba597b5a08339fe963722dbf99b28" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d8\98d1dc968347f9e738467ce687577fe1c624a5" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\d9\a3bb9fff7dd09e0d3a70518ee985c68f8d9a65" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\da\fc259663905266ff81d00cd4115237a7f1c1a0" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\dd\49b5ed45519df4618c0699d3961aed9007ccfb" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\dd\a32d271f9cf67615bcb086c83c22e1195e5706" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\de\11ddf7b7d789ea4732a71bcee160165e96f08b" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e1\7960b1d21e1fdd450950656cb95a2e70360d00" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e3\18237ec7849d569a7e1ddd544fddd53b5654cd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e3\a98f2a4c6dfe8b0200ea09402efdc3a5de741e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e5\6567cda4b3d8a05676b9e3f19959109cf67987" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e5\fd104bca8f3ed95d399c655a711a6db1db492f" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e6\1a2ba3c09c354982227ea3be174cdaa4567233" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e6\31977a30c29f1f7ba2644672dbddc0f4af5e5a" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e7\7f9002ac8108c53d7d539357e7ae7d28349d34" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\e8\c538d747a149276075de1a85d1bfd50fea9fc6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ec\56e7b9e80f270925b890b418218796b610e163" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ee\9342c5334b1080001da7f25f5598037d204ea2" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ef\37ac3adc3132b859e87cc270738847c3674e33" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ef\b2bfc682dc928687d8d940cd8d54c4ecc75c40" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ef\f8750a24865ead0bc992af081b2da1f4a0d92e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f0\d101b6a937d842694b9abfea3907c2262c39f8" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f2\cf722715c1155d8ffb5450aaf47eb855243c16" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f3\072176b7e55dc151570790bdc121764f4093bd" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f3\4cb2854496be0fe95ae91f80ea53fcc9b6bad2" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f4\5e56ebc385dcbc53bc3f65cf6fce0359e9f8d9" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f4\ff11a9f79d7c0b9e0846e38a61be2a6049cd56" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f7\34afd80fe51bc572ed487486dfe53fb22fc1a2" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f9\5b218042d883a3d1f17f33c7f7da104d1c0c53" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\f9\e30ee3f4a9741f59d2682b043c99d20fb19fcf" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fa\617cb0f2cb66df849789b0bffa24620fa6050e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fc\a5bbe7d692987ca749539804e528018ddbab21" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fd\81dd29d1f97d1d6fcb3850f6c77c5e93f0211e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fd\9aac3bf2e883d1038eb26a923d6374ace923da" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fe\1b5d2e020a8692cd8cb9021a31f976315762e6" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\fe\918494f0073ec5721dea8e2c86fd46eab9eeb1" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ff\79d787d9ef4794b8f08725629cf8d605ce1f68" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\ff\e7dbe588eda5abed7fab9b810328f3be57401e" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\pack\pack-dd631da9b4cba6bb54e82bfcb475f016ab682615.idx" />
+    <None Include="wwwroot\lib\colresizable\.git\objects\pack\pack-dd631da9b4cba6bb54e82bfcb475f016ab682615.pack" />
+    <None Include="wwwroot\lib\colresizable\.git\ORIG_HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\packed-refs" />
+    <None Include="wwwroot\lib\colresizable\.git\refs\heads\master" />
+    <None Include="wwwroot\lib\colresizable\.git\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\lib\colresizable\.git\refs\remotes\origin\master" />
+    <None Include="wwwroot\lib\colresizable\.git\refs\tags\1.6" />
+    <None Include="wwwroot\lib\colresizable\.git\sourcetreeconfig" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Finbuckle.MultiTenant.AspNetCore" Version="6.0.0" />
+    <PackageReference Include="Finbuckle.MultiTenant.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="IdentityModel" Version="4.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Alexinea.Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Autofac" Version="6.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="FluentValidation" Version="9.2.2" />
+    <PackageReference Include="IdentityModel" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.7.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="2.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Refit" Version="5.2.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.1-dev-00216" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.1-dev-00771" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MAA.ActionTracking.Data\MAA.ActionTracking.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\jquery-bootstrap-scrolling-tabs\src\" />
+  </ItemGroup>
+
+</Project>

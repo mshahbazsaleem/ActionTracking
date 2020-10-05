@@ -4,6 +4,7 @@
 
         //Inherit the base view model
         BaseViewModel.call(this, view, data);
+
     }
 
     //Export globally

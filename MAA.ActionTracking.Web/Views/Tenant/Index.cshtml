@@ -1,8 +1,7 @@
 ﻿@using MAA.ActionTracking.Web.Infrastructure.Services
 @inject TenantService _tenantService
 @{
-    ViewData["Title"] = "Tenants";
-  
+    ViewData["Title"] = "Tenants";  
 }
 
 <!--Tenants-->
@@ -23,7 +22,7 @@
 
         var viewModelJs = @Json.Serialize(await _tenantService.GetModel());
 
-        $.extend(viewModelJs, { controller: 'Tenant', idField: "Id", resetIgnore: [], mappingIgnore: [] });
+        $.extend(viewModelJs, { controller: 'Tenant', idField: "Id", resetIgnore: ["SystemVariables"], mappingIgnore: ["SystemVariables"] });
 
     </script>
 

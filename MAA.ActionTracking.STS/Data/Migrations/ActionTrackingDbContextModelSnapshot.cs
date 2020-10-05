@@ -320,6 +320,30 @@ namespace MAA.ActionTracking.STS.Data.Migrations
                     b.ToTable("UserTokens");
                 });
 
+            modelBuilder.Entity("MAA.ActionTracking.Data.Entities.TestVariable", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastUpdated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TestVariables");
+                });
+
             modelBuilder.Entity("MAA.ActionTracking.Data.Entities.TenantUserClaim", b =>
                 {
                     b.HasOne("MAA.ActionTracking.Data.Entities.TenantUser", null)

@@ -469,3 +469,9 @@ E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\staticwebasse
 E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\MAA.ActionTracking.Web.genruntimeconfig.cache
 E:\Ali\DynamicForms\MAA.ActionTracking.Web\bin\Debug\netcoreapp3.1\libman.json
 E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\DynamicForm\Index.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\SystemVariable\Index.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\SystemVariable\_List.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\SystemVariable\_Manage.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\TestVariable\Index.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\TestVariable\_List.cshtml.g.cs
+E:\Ali\DynamicForms\MAA.ActionTracking.Web\obj\Debug\netcoreapp3.1\Razor\Views\TestVariable\_Manage.cshtml.g.cs

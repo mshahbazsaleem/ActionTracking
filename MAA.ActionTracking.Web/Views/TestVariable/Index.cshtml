@@ -1,0 +1,32 @@
+﻿@using MAA.ActionTracking.Web.Infrastructure.Services
+@inject TestVariableService _TestVariableService
+@{
+    ViewData["Title"] = "Test Variables";  
+}
+
+<!--TestVariables-->
+<div class="row">
+    <div class="col-md-12">
+
+        @await Html.PartialAsync("_List")
+       
+    </div>
+</div>
+
+<!--Manage Variable-->
+@await Html.PartialAsync("_Manage")
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        var viewModelJs = @Json.Serialize(await _TestVariableService.GetModel());
+
+        $.extend(viewModelJs, { controller: 'TestVariable', idField: "Id", resetIgnore: [], mappingIgnore: [] });
+
+    </script>
+
+    <!--app scripts-->
+    <script src="~/js/administration/TestVariables/variable-view-model.js"></script>
+    <script src="~/js/administration/TestVariables/variables.js"></script>
+}

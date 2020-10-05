@@ -24,12 +24,14 @@ namespace MAA.ActionTracking.Web.Infrastructure.Services
 
         public async Task<Tenant> GetModel()
         {
-            return await Task.FromResult(new Tenant());
+            var tenant = new Tenant().ToModel();
+
+            return await Task.FromResult(tenant);
         }
         public async Task<JsonResult> GetAll(GridViewModel model)
         {
             var total = DbContext.Tenants.Count();
-            var results = DbContext.Tenants.Skip((model.Page-1) * model.Length).Take(model.Length).ToList().ToModel();
+            var results = DbContext.Tenants.Skip((model.Page - 1) * model.Length).Take(model.Length).ToList().ToModel();
 
             return await Task.FromResult(new JsonResult(new GridDataViewModel<TenantViewModel>
             {
@@ -59,7 +61,8 @@ namespace MAA.ActionTracking.Web.Infrastructure.Services
 
                 await DbContext.SaveChangesAsync();
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
 
                 result.Message = ex.Message;
             }
@@ -77,7 +80,8 @@ namespace MAA.ActionTracking.Web.Infrastructure.Services
 
                 await DbContext.SaveChangesAsync();
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 result.Message = ex.Message;
             }
 

@@ -14,12 +14,10 @@ namespace MAA.ActionTracking.Web.Controllers.Tenant
     public class TenantAPIController :ControllerBase
     {
         private readonly TenantService _service;
-        private readonly UserProfileService _userProfileService;
 
-        public TenantAPIController(TenantService service, UserProfileService userProfileService)
+        public TenantAPIController(TenantService service)
         {
             _service = service;
-            _userProfileService = userProfileService;
         }
 
         // GET api/tenant/list

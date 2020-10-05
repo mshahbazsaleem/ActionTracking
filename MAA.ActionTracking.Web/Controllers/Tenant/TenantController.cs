@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MAA.ActionTracking.Web.Controllers
 {
+    //TODO: Uncomment once we are done with multi tenancy and 
+    //role claims are properly returned by IDS
     //[Authorize(Policy = "AdminPolicy")]
     [Authorize]
     public class TenantController : BaseController

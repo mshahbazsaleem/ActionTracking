@@ -17,7 +17,7 @@ namespace MAA.ActionTracking.Data.Contexts
 
         public DbSet<TenantInfo> TenantInfos { get; set; }
         public DbSet<Tenant> Tenants { get; set; }
-
+        public DbSet<TestVariable> TestVariables { get; set; }
         public DbSet<SystemVariable> SystemVariables { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
